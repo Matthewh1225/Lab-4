@@ -57,7 +57,6 @@ public class Problem1 {
         System.out.println(search(cat,57));
         System.out.println("\n");
         System.out.println(otherSearch(cat,57));
-     
         
     }
 }
