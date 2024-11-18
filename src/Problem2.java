@@ -2,7 +2,7 @@ public class Problem2 {
     public static void mazeSolver(int[][] maze,int x, int y){
         maze[x][y] = 8;
         if(x == 8 && y == 8){
-            prinMaze(maze); 
+            printMaze(maze); 
             maze[x][y] = 0;
             return;
         }
@@ -13,13 +13,13 @@ public class Problem2 {
         int[] down= {x+1,y};
         int[][] possibleMoves={right,down,left,up};
         for(int[] move:possibleMoves){
-            if(validity(maze, move[0], move[1])){
+            if(valid(maze, move[0], move[1])){
                 mazeSolver(maze, move[0], move[1]);
             }
         }
         maze[x][y]=0;
     }
-    public static void prinMaze(int [][] maze) {
+    public static void printMaze(int [][] maze) {
         System.out.println("Soulution found!\n");
         for (int[] row : maze) {
             for (int col : row) {
@@ -39,7 +39,7 @@ public class Problem2 {
         }
         System.out.println();
     }
-    public static boolean validity (int[][] maze, int x,int y) {
+    public static boolean valid (int[][] maze, int x,int y) {
         if(maze.length==0 || x >= maze.length || x<0 || y<0 || y >= maze[x].length) {
             return false;
         }

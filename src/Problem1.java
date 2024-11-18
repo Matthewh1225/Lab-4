@@ -10,7 +10,7 @@ public class Problem1 {
         return null;   
     }
 
-    public static String otherSearch(int[][] matrix,int valueToFind){
+    public static String betterSearch(int[][] matrix,int valueToFind){
         int row = matrix.length;
         int colSize = matrix[0].length;
 
@@ -39,7 +39,7 @@ public class Problem1 {
 
         System.out.println(search(CAT,57));
         System.out.println("\n");
-        System.out.println(otherSearch(CAT,57));
+        System.out.println(betterSearch(CAT,57));
         
     }
 }
