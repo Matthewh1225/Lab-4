@@ -3,7 +3,7 @@ public class Problem1 {
         for (int i = 0; i < matrix.length ;i++){
             for (int j = 0; j < matrix[i].length ;j++){
                 if (matrix[i][j]  == valueToFind){
-                    return i+","+j;
+                    return valueToFind + " found at  (" + i + "," + j+")";
                 }
             }   
         }
@@ -22,7 +22,7 @@ public class Problem1 {
                     col--;
                 }
                 if (col>=0){
-                    return  i+","+col;
+                    return  valueToFind + " found at (" + i + "," + col + ")";
                 }   
             }
         }
