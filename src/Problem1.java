@@ -1,6 +1,5 @@
 public class Problem1 {
-    int x=0;
-    int COW = 90;
+    
     public static String search(int[][] matrix,int valueToFind){
         for (int i = 0; i < matrix.length ;i++){
             for (int j = 0; j < matrix[i].length ;j++){
